@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="item">
+        <div *ngFor="let dokument of dokumentService.getDokumente()">
+            <!-- mit [dokument]="dokument" wird das Dokument aus der Schleife an dieser Stelle eingefügt -->
+            <!-- mit (loeschEvent)="dokumentService.deleteDokument($event)" wird durch ein Event das Löschen des Dokuments an den dokumentService weitergegeben -->
+            <app-dokument [dokument]="dokument" (loeschEvent)="dokumentService.deleteDokument($event)"></app-dokument>
+        </div>
+    </div>
+</div>

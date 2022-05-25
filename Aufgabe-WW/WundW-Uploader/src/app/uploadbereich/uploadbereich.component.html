@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="item uploadSchrift1">
+        <p>Zum Hochladen von Dokumenten,<br> ziehen Sie diese in das Feld</p>
+    </div>
+    <div class="item">
+        <!-- Icon - musste Inline machen, weil include nicht funktioniert hat -->
+        <svg class="iconColorChange" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <title>Upload-24px</title>
+            <polygon points="11 5.4 11 15 13 15 13 5.4 17.3 9.7 18.7 8.3 12 1.6 5.3 8.3 6.7 9.7 11 5.4" />
+            <polygon points="20 15 20 20 4 20 4 15 2 15 2 22 22 22 22 15 20 15" />
+        </svg>
+    </div>
+    <div class="item uploadSchrift2">
+        <p>Zugelassene Dateiformate: PDF, PNG, JPEG, ...</p>
+    </div>
+    <div class="item">
+        <!-- Button + Funktion zur Dokumentenauswahl -->
+        <button mat-flat-button (click)="openFileDialog()">Durchsuchen
+            <input #filedropref type="file" id="fileDropRef" multiple (change)="fileSelected($event)">
+        </button>
+    </div>
+</div>

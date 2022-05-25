@@ -1,0 +1,41 @@
+.container {
+    background-color: #F0F0F0;
+    border: 3px dashed #DEDEDE;
+    border-radius: 10px;
+    height: 400px;
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadSchrift1 {
+    font-weight: bold;
+    text-align: center;
+    color: #424242;
+    font-size: large;
+}
+
+.uploadSchrift2 {
+    text-align: center;
+}
+
+.item {
+    padding: 10px;
+}
+
+.mat-flat-button {
+    border-radius: 0px;
+    background-image: linear-gradient(45deg, #7A0A6E 0%, #F84914 50%);
+    color: #ffffff;
+    font-size: large;
+}
+
+.iconColorChange {
+    fill: #F84914;
+}
+
+#fileDropRef {
+    display: none;
+}

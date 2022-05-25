@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="item">
+        <!-- Dokument-Icon von Icons8, ist ja nicht für die kommerzielle Nutzung gedacht... -->
+        <img src="./assets/dokumentIcon.png">
+    </div>
+    <div class="item">
+        {{dokument.name}}
+    </div>
+    <div class="item">
+        <!-- Durch den Click wird die Funktion loeschen ausgelöst, damit durch ein Event das jeweilige Dokument aus dem Array gelöscht werden kann -->
+        <button mat-flat-button (click)="loeschen()">X</button>
+    </div>
+    <div class="item">
+        <mat-form-field appearance="fill">
+            <mat-label>Dokumententyp auswählen</mat-label>
+            <mat-select>
+                <mat-option value="one">kein Dummie</mat-option>
+                <mat-option value="two">Dummie</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="item">
+        {{dokument.groesseInMB}} MB
+    </div>
+</div>

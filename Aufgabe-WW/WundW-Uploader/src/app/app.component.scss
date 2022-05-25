@@ -1,0 +1,38 @@
+/* Styleguide
+
+W&W Rot #F84914
+Schwarz #000000
+Weiß    #FFFFFF
+W&W Violett     #7A0A6E
+-> Darbverlauf Rot&Violett
+
+Grau    #F0F0F0
+20%     #DEDEDE
+40%     #AAAAAA
+60%     #666666
+80%     #424242
+
+Tertiär
+    1 Magenta   #B7113E
+    2 dunk.Violett  #4B0341
+    3 Gelb      #F0AA00
+    4 Orange    #DF7D00
+    5 hell Blau #00B5DD
+    6 dunk.Blau #1E6478
+    7 hell Grün #94C23C
+    8 dunk.Grün #65882A
+
+Meldungsfarben
+    Erfolgstext grün    #94C23C
+    BG Erfolgstext helles grün  #E8f3d5
+    Fehler rot          #E20A16
+    BG Fehlertext helles rosa   #FBE6E7  
+
+*/
+
+.mat-card {
+    margin: 3% 5%;
+    border: 1px solid #DEDEDE;
+    height: 1000px;
+
+}
